@@ -1,0 +1,135 @@
+Standard Prompt
+1. What a Standard Prompt Is
+
+A standard prompt is a clear, structured, and reusable instruction given to a Large Language Model (LLM) to consistently produce the intended output.
+
+Think of it as:
+
+A specification, not a question
+
+An API contract, not a chat message
+
+A control mechanism for model behavior
+
+A standard prompt minimizes ambiguity and maximizes predictability.
+
+2. Core Structure of a Standard Prompt
+
+A well-formed standard prompt typically includes:
+
+1. Role / Context
+
+Defines who the model should act as.
+
+“You are a senior software engineer…”
+
+2. Objective
+
+States exactly what needs to be done.
+
+“Explain the concept of REST APIs…”
+
+3. Constraints
+
+Sets boundaries and rules.
+
+“Use no more than 150 words. Avoid analogies.”
+
+4. Input (if applicable)
+
+Provides data the model must operate on.
+
+“Given the following code snippet…”
+
+5. Output Format
+
+Specifies how the response should look.
+
+“Respond in bullet points with code examples.”
+
+3. How a Standard Prompt Is Used
+
+Standard prompts are used when consistency, reliability, and scale matter.
+
+Common use cases:
+
+Automating documentation
+
+Generating code or tests
+
+Summarizing reports
+
+Customer support responses
+
+Educational content generation
+
+AI-driven internal tools
+
+In production systems:
+
+Prompts are versioned
+
+Prompts are tested
+
+Prompts are treated like code
+
+4. Why Standard Prompts Are Important
+1. Predictability
+
+Unstructured prompts produce variable outputs.
+Standard prompts reduce randomness and drift.
+
+2. Reusability
+
+One well-designed prompt can be reused across:
+
+Teams
+
+Projects
+
+Products
+
+3. Scalability
+
+You cannot scale AI systems with ad-hoc instructions.
+Standard prompts enable automation.
+
+4. Quality Control
+
+Constraints and formatting rules improve output quality and reduce errors.
+
+5. Collaboration
+
+Teams can review, improve, and maintain prompts like any other technical asset.
+
+5. Strong Opinion (Reality Check)
+
+If you treat prompts like casual text, you get casual results.
+If you treat prompts like engineering artifacts, you get leverage.
+
+Prompt engineering is not about creativity first —
+it’s about precision, structure, and intent.
+
+6. Example of a Standard Prompt
+Role: You are a technical writer.
+Task: Explain what a standard prompt is.
+Constraints: Maximum 120 words. Use formal tone.
+Output Format: Paragraph followed by a bullet list.
+
+
+This is not a conversation.
+This is an instruction set.
+
+Bottom Line
+
+A standard prompt is:
+
+Intentional
+
+Structured
+
+Repeatable
+
+Production-ready
+
+And it’s foundational for anyone serious about working with AI systems.

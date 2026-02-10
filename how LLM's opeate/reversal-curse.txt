@@ -1,0 +1,119 @@
+What Is the Reversal Curse?
+
+Short definition:
+The reversal curse is when an LLM knows a fact in one direction but fails when you ask for the same fact in reverse.
+
+Learned: A → B
+Fails at: B → A
+
+Same information. Same meaning. Different direction. Model fumbles.
+
+Classic Example
+
+The model learns this during training:
+
+“Marie Curie discovered radium.”
+
+Ask:
+
+“Who discovered radium?”
+✅ Correct: Marie Curie
+
+Now reverse it:
+
+“What did Marie Curie discover?”
+❌ Model may hesitate, hallucinate, or give partial answers.
+
+Same fact. Direction changed. Performance drops.
+
+Why This Happens (The Real Reason)
+1️⃣ LLMs Learn Patterns, Not Bidirectional Truth
+
+Training objective:
+
+Predict the next token, not store facts as graphs.
+
+So the model internalizes:
+
+“discovered → radium”
+
+Not a reversible relation like a database would
+
+2️⃣ Language Is Directional in Training Data
+
+Natural language is asymmetric:
+
+“X invented Y” appears far more often than
+
+“Y was invented by X”
+
+Frequency bias = asymmetric learning.
+
+3️⃣ No Explicit Symbolic Memory
+
+LLMs don’t store:
+
+(discoverer: Marie Curie, object: radium)
+
+
+They store probabilistic token flows.
+
+So reversing the query changes the probability landscape.
+
+4️⃣ Attention ≠ Logical Inversion
+
+Self-attention links tokens in context, but it does not guarantee:
+
+Transitivity
+
+Invertibility
+
+Logical symmetry
+
+That’s human logic, not learned statistics.
+
+Why This Matters (No Sugar-Coating)
+🔴 Hallucinations Increase
+
+Reversed prompts push the model into low-confidence zones.
+
+🔴 QA Systems Break
+
+Knowledge looks solid until users phrase questions differently.
+
+🔴 Prompt Sensitivity Explodes
+
+Same intent, different wording → different output quality.
+
+How Prompt Engineering Mitigates It (Practical Moves)
+✅ Force Bidirectionality
+State the relationship explicitly in both directions.
+
+✅ Ask for Structured Output
+Return answer as:
+- Subject
+- Relation
+- Object
+
+✅ Re-anchor the Fact
+Given the fact that X did Y, what does Y imply about X?
+
+✅ Chain-of-Thought (When Allowed)
+
+Encourages internal reasoning steps instead of pattern recall.
+
+High-Level Insight (This Is the Takeaway)
+
+LLMs don’t “know facts” — they know how facts are usually phrased.
+
+The reversal curse exposes that gap.
+
+TL;DR (Exec Version)
+
+Reversal curse = failure under inverted questions
+
+Caused by directional training + probabilistic learning
+
+Not a bug — a design limitation
+
+Prompting can reduce it, not eliminate it
