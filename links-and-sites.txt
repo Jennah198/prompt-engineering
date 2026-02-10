@@ -3,3 +3,9 @@
 
 <!----------for image creation-------->
 "image creator DALL.E of gpt model is included" ---- https://www.bing.com/images/create
+
+
+<!---------**suno.com*** -- free website for music creation using prompt------->
+here are my drafts
+https://suno.com/s/v7hZPXrVgYnikTe7
+https://suno.com/s/5pZcvP3w9PPQ2lbr
