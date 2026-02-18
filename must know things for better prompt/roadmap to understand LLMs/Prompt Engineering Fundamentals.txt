@@ -250,4 +250,128 @@ The context window determines how much information the model can process.
 Personas, voice, tone, and style significantly enhance output precision.
 
 
-*********as long as the secret or the important information we told gpt to keep it safe, if the tokens are in the right context window we can make it reveal with the right prompt, so this models are not good to keep a secret************
+🔒 1️⃣ LLMs Are NOT Secure Storage
+Core Principle
+
+If sensitive information remains inside the active context window, it can potentially be extracted through carefully crafted prompts.
+
+LLMs do not “forget” within a session — they only lose access when tokens move outside the context window.
+
+Key implication:
+
+LLMs should never be treated as secure systems for storing secrets.
+
+📩 2️⃣ Writing Effective User Instructions
+Clear and Specific Instructions
+Principle
+
+Ambiguous prompts produce ambiguous outputs.
+
+The model performs best when:
+
+The task is explicit
+
+The expected output format is defined
+
+Constraints are clearly stated
+
+Example:
+❌ “Explain AI.”
+✅ “Explain how neural networks work in 5 bullet points for beginners.”
+
+Delimiters
+Definition
+
+Delimiters are characters used to separate instructions from data, preventing confusion.
+
+They help the model distinguish:
+
+What to do
+
+What to analyze
+
+Common Delimiters
+===
+'''
+###
+***
+<data></data>
+
+Example Usage
+Summarize the text below in 3 bullet points.
+
+###
+Artificial intelligence is transforming industries by automating decision-making...
+###
+
+
+This ensures the model clearly identifies the input boundary.
+
+🎯 3️⃣ The X–Y Problem
+Definition
+
+The X–Y problem occurs when someone asks about a solution (Y) instead of the actual goal (X).
+
+Structure
+
+X = The real objective
+
+Y = The attempted solution
+
+Example
+
+❌ “How do I remove spaces from a string?”
+✔ Real goal: “How do I parse structured data efficiently?”
+
+Key Rule
+
+Always communicate goals, not just attempted solutions.
+
+This improves response relevance significantly.
+
+🧠 4️⃣ In-Context Learning
+Definition
+
+In-context learning is the model’s ability to learn patterns from examples within the prompt itself, without retraining.
+
+Types of In-Context Prompting
+Zero-Shot Prompting
+
+Definition: No examples provided — only instructions.
+
+Example:
+
+Translate this sentence to French:
+"Hello, how are you?"
+
+One-Shot Prompting
+
+Definition: One example is provided to guide the model.
+
+Example:
+
+English: Cat
+French: Chat
+
+English: Dog
+French:
+
+Few-Shot Prompting
+
+Definition: Multiple examples are provided to establish a pattern.
+
+Example:
+
+2 + 3 = 5
+4 + 6 = 10
+7 + 8 =
+
+Why It Works
+
+Examples help the model:
+
+Understand task structure
+
+Reduce ambiguity
+
+Improve accuracy
