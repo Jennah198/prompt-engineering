@@ -248,3 +248,6 @@ Context improves accuracy but must be managed within token limits.
 The context window determines how much information the model can process.
 
 Personas, voice, tone, and style significantly enhance output precision.
+
+
+*********as long as the secret or the important information we told gpt to keep it safe, if the tokens are in the right context window we can make it reveal with the right prompt, so this models are not good to keep a secret************
