@@ -377,3 +377,13 @@ Reduce ambiguity
 Improve accuracy
 
 ***if you give even wrong examples the model will give you the exact answer, the accuracy of the example doesn't affect the accuracy of the outputs. examples are way to show what the output should look like***
+
+chain-of-thought Prompting(COT)
+--asking the model to see us how it's addressing our input. this gives a better and more accurate answers. the user is the one who write the reasoning process as an example.
+
+--also it provides a window into the model's thought process
+
+--and allow for debugging
+
+if we are in zero shot Prompting
+we can tell the chat to think and give us the answer step by step this is enough.
