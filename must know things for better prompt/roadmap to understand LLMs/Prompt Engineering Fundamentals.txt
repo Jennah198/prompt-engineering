@@ -356,7 +356,7 @@ French: Chat
 English: Dog
 French:
 
-Few-Shot Prompting
+Few-Shot Prompting (4-8 example is enough for better results)
 
 Definition: Multiple examples are provided to establish a pattern.
 
@@ -375,3 +375,5 @@ Understand task structure
 Reduce ambiguity
 
 Improve accuracy
+
+***if you give even wrong examples the model will give you the exact answer, the accuracy of the example doesn't affect the accuracy of the outputs. examples are way to show what the output should look like***
