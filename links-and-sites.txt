@@ -9,3 +9,90 @@
 here are my drafts
 https://suno.com/s/v7hZPXrVgYnikTe7
 https://suno.com/s/5pZcvP3w9PPQ2lbr
+
+---> LMSYS Chatbot Arena — Model Performance Benchmarking
+
+Website: https://lmsys.org/blog/2023-05-10-leaderboard/
+
+The Chatbot Arena Leaderboard (by LMSYS) provides a live ranking of major AI models based on head-to-head human evaluations.
+
+What It Offers
+
+Real-time model comparisons
+
+Elo-based ranking system
+
+Blind side-by-side evaluations
+
+Performance trends over time
+
+Why It’s Useful
+
+Unlike static benchmark papers, this platform reflects:
+
+Practical conversational performance
+
+Human preference scoring
+
+Up-to-date competitive positioning
+
+If you want to understand the current state of frontier models, this is one of the most transparent public comparisons available.
+
+--->LM Studio — Running Open-Source LLMs Locally
+
+Website: https://lmstudio.ai/
+
+LM Studio is a desktop application that allows you to:
+
+Download open-source LLMs
+
+Run them locally on your machine
+
+Adjust parameters like temperature and top-p
+
+Experiment without API costs
+
+Key Requirements
+
+Running models locally requires sufficient hardware:
+
+Minimum Considerations
+
+Modern CPU
+
+16GB+ RAM (recommended)
+
+Dedicated GPU strongly recommended for larger models
+
+Adequate disk space (models can range from 2GB to 50GB+)
+
+Performance depends heavily on:
+
+VRAM capacity
+
+Model size (7B vs 13B vs 70B parameters)
+
+Quantization level
+
+Why This Matters
+
+Local execution gives you:
+
+Full control over inference parameters
+
+Offline experimentation
+
+No per-token costs
+
+Deeper technical understanding of model behavior
+
+However, you trade off:
+
+Hardware limitations
+
+Setup complexity
+
+Slower performance compared to cloud frontier models
+
+course handbook
+https://half-money-bd8.notion.site/Course-Handbook-6234be19ffcd4e02991fa7c5227d21b3
